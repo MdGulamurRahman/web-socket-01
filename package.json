@@ -13,5 +13,8 @@
   "dependencies": {
     "express": "^4.18.1",
     "ws": "^8.8.1"
+  },
+  "engines": {
+    "node": "v16.14.2"
   }
 }
