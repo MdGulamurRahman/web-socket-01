@@ -27,6 +27,6 @@ wss.on("connection", (socket)=>{
     })
 });
 
-httpServer.listen(process.env.PORT || 3000, ()=>{
+httpServer.listen(process.env.PORT || 3030, ()=>{
     console.log("Server is running @3030");
 })
