@@ -7,6 +7,7 @@
     <title>Web Socket</title>
   </head>
   <body>
+    <h1>We are learning Web Socket 😜</h1>
     <ul id="ul"></ul>
     <form id="form">
       <input type="text" />
@@ -23,7 +24,7 @@
         const text = form[0].value;
         ws.send(text);
         const li = document.createElement("li");
-        li.textContent = "You: " + text;
+        li.textContent = "You👉 " + text;
         ul.appendChild(li);
         form[0].value = "";
       });
@@ -32,7 +33,7 @@
 
     ws.addEventListener("message", (e) => {
       const li = document.createElement("li");
-      li.textContent = "Anonymous: " + e.data;
+      li.textContent = "Anonymous👉 " + e.data;
       ul.appendChild(li);
     });
   </script>
